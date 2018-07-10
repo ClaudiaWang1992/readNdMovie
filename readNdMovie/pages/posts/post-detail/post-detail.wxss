@@ -1,0 +1,105 @@
+/* pages/posts/post-detail/post-detail.wxss */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.head-image {
+    height: 460rpx;
+    width: 100%;
+}
+
+.audio {
+    position: absolute;
+    width: 90rpx;
+    height: 90rpx;
+    left: 50%;
+    top: 230rpx;
+    margin-left: -45rpx;
+    margin-top: -45rpx;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.post-author-date {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rpx;
+    margin-left: 30rpx;
+    line-height: 64rpx;
+}
+
+.avatar {
+    width: 64rpx;
+    height: 64rpx;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.author {
+    vertical-align: middle;
+    margin-left: 20rpx;
+    font-size: 30rpx;
+    font-weight: 300;
+    color: #666;
+}
+
+.content-text {
+    font-size: 24rpx;
+    color: #999;
+    margin-left: 20rpx;
+    vertical-align: middle;
+}
+
+.date {
+    font-size: 24rpx;
+    color: #999;
+    margin-left: 30rpx;
+    vertical-align: middle;
+}
+
+.title {
+    font-size: 36rpx;
+    font-weight: 600;
+    margin-left: 40rpx;
+    color: #4b556c;
+    letter-spacing: 2px;
+}
+
+.tool {
+    margin-top: 20rpx;
+}
+
+.circle-image {
+    float: right;
+    margin-right: 40rpx;
+    vertical-align: middle;
+}
+
+.circle-image image {
+    height: 90rpx;
+    width: 90rpx;
+}
+
+.share-image {
+    margin-left: 30rpx;
+}
+
+.horizen {
+    width: 660rpx;
+    height: 1px;
+    background-color: #e5e5e5;
+    position: relative;
+    margin: 0 auto;
+    vertical-align: middle;
+    top: 46rpx;
+    z-index: -99;
+}
+
+.detail-context {
+    line-height: 44rpx;
+    letter-spacing: 2px;
+    color: #666;
+    margin-left: 30rpx;
+}

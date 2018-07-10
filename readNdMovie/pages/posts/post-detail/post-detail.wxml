@@ -1,0 +1,27 @@
+<!-- pages/posts/post-detail/post-detail.wxml -->
+<view class="container">
+    <image class="head-image" src="{{isAudioPlaying?postData.music.coverImg:postData.imgSrc}}"></image>
+    <image class="audio" catchtap="onPlayMusicTap" src="{{!isAudioPlaying?'/images/music/music-start.png':'/images/music/music-stop.png'}}"></image>
+    <view class="post-author-date">
+        <image class="avatar" src="{{postData.avatar}}"></image>
+        <text class="author">{{postData.author}}</text>
+        <text class="content-text">发表于</text>
+        <text class="date">{{postData.dateTime}}</text>
+    </view>
+    <text class="title">
+        {{postData.title}}
+    </text>
+    <view class="tool">
+        <view class="circle-image">
+            <image class="collecation-image" 
+                catchtap="onCollectionTap"
+                src="{{!isCollected?'/images/icon/collection-anti.png':'/images/icon/collection.png'}}"
+                ></image>
+            <image class="share-image" catchtap="onShareTap" src="/images/icon/share.png"></image>
+        </view>
+        <view class="horizen"></view>
+    </view>
+    <text class="detail-context">
+        {{postData.detail}}
+    </text>
+</view>
